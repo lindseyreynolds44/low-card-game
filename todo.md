@@ -1,5 +1,5 @@
 
-#Phase 1
+#Phase 1 (3)
 
 #  @todo          loadCardIcons()
 #                 turnIntIntoCardValue(int k)
@@ -8,7 +8,7 @@
 
 
 
-#Phase 2
+#Phase 2(15)
 
 * client (main)
 # @todo         --create and add labels to panel in client (main)--
@@ -26,24 +26,25 @@
 #               static public Icon getBackCardIcon()
 * 
 * Card import
-# @todo         --import Card from Assig3--
+# @todo         //import Card from Assig3
 #               --adjust for joker--
 #               public static char[] valuRanks()
 #               static void arraySort(Card[], int arraySize)
 *               
 * Hand import
-# @todo         void sort()
+# @todo         //import Hand from Assig3
+#               void sort()
                 public Card playCard(int cardIndex) ....done
 * 
 * Deck import
-# @todo         --import Deck from Assig3--
+# @todo         //import Deck from Assig3--
 #               --adjust for the joker in MasterPack--
 #               boolean addCard(Card card)
 #               boolean removeCard(Card card)
 #               void sort()
 #               int getNumCards()        
 
-#Phase3
+#Phase3 (9+)
 
 # @todo          create action listeners
 #                place low card in winning[] array
