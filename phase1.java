@@ -3,7 +3,7 @@ import java.awt.*;
 
 /************************************************************
  * Phase 1
- * GUI Cards
+ * GUI Cards 
  * 
  * @phase1_todo   loadCardIcons()
  *                turnIntIntoCardValue(int k)
@@ -69,3 +69,4 @@ public class phase1
       frmMyWindow.setVisible(true);
    }
 }
+
