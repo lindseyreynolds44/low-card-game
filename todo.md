@@ -1,0 +1,55 @@
+
+#Phase 1
+
+#  @todo          loadCardIcons()
+#                 turnIntIntoCardValue(int k)
+#                 turnIntIntoCardSuit(int j)     
+
+
+
+
+#Phase 2
+
+* client (main)
+# @todo         --create and add labels to panel in client (main)--
+#               static Card randomCardGenerator()
+* 
+* CardTable
+# @todo         public CardTable(title, numCardsPerHand, numPlayers)
+#               public getNumCardsPerHand() ....done
+#               public getNumPlayers() ....done
+* 
+* 
+* GUI Cards
+# @todo         static void loadCardIcons()
+#               static public getIcon(Card card)
+#               static public Icon getBackCardIcon()
+* 
+* Card import
+# @todo         --import Card from Assig3--
+#               --adjust for joker--
+#               public static char[] valuRanks()
+#               static void arraySort(Card[], int arraySize)
+*               
+* Hand import
+# @todo         void sort()
+#               public Card playCard(int cardIndex) ....done
+* 
+* Deck import
+# @todo         --import Deck from Assig3--
+#               --adjust for the joker in MasterPack--
+#               boolean addCard(Card card)
+#               boolean removeCard(Card card)
+#               void sort()
+#               int getNumCards()        
+
+#Phase3
+
+# @todo          create action listeners
+#                place low card in winning[] array
+#                add JLabels
+#                decide how to select a card from your hand (button?)
+#                decide how the computer plays 
+#                    intentionally lose? always win?
+#                decide how to update cards or the computer's cards to #                reflect one fewer card every round so that 
+#                hands get smaller

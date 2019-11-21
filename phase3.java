@@ -1,6 +1,31 @@
-/****************************************
+/************************************************************************
  * Low-Card Game Logic
- ***************************************/
+ * 
+ * @todo         #create action listeners.
+ *               #place low card in winning[] array.
+ *               #add JLabels.
+ *               #decide how to select a card from your hand (button?).
+ *               #decide how the computer plays. 
+ *                   -intentionally lose? always win?
+ *               #decide how to update cards or the computer's cards to                reflect one fewer card every round so that 
+ *                   reflect one fewer card every round 
+ *                   so that hands get smaller.
+ * 
+ * 
+ ***********************************************************************/
+
+public static void main(String[] args)
+{
+   int numPacksPerDeck = 1;
+   int numJokersPerPack = 4;
+   int numUnusedCardsPerPack = 0;
+   Card[] unusedCardsPerPack = null;
+
+   highCardGame = new CardGameFramework(
+      numPacksPerDeck, numJokersPerPack,
+      numUnusedCardsPerPack, unusedCardsPerPack,
+      NUM_PLAYERS, NUM_CARDS_PER_HAND
+   );
 
 
 
@@ -11,12 +36,6 @@
 
 
 
-
-
-
-
-
- 
 /****************************************
  * CardGameFrameWork class
  *****************************************/
