@@ -16,8 +16,8 @@
 * 
 * CardTable
 # @todo         public CardTable(title, numCardsPerHand, numPlayers)
-#               public getNumCardsPerHand() ....done
-#               public getNumPlayers() ....done
+                public getNumCardsPerHand() ....done
+                public getNumPlayers() ....done
 * 
 * 
 * GUI Cards
@@ -33,7 +33,7 @@
 *               
 * Hand import
 # @todo         void sort()
-#               public Card playCard(int cardIndex) ....done
+                public Card playCard(int cardIndex) ....done
 * 
 * Deck import
 # @todo         --import Deck from Assig3--
