@@ -1,10 +1,11 @@
 {
-   "configurations": [
-      {
-         "type": "java",
-         "name": "CodeLens (Launch) - phase1",
-         "request": "launch",
-         "mainClass": "phase1"
-      }
-   ]
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - phase1",
+            "request": "launch",
+            "mainClass": "phase1",
+            "projectName": "low-card-game_2793c221"
+        }
+    ]
 }

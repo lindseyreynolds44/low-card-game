@@ -1,15 +1,18 @@
 
+
+/*--------------------------Person-1----------------------
 #Phase 1 (3)
 
 #  @todo          loadCardIcons()
 #                 turnIntIntoCardValue(int k)
 #                 turnIntIntoCardSuit(int j)     
-
+---------------------------------------------------------*/
 
 
 
 #Phase 2(15)
 
+/*--------------------------Person-2------------------------
 * client (main)
 # @todo         --create and add labels to panel in client (main)--
 #               static Card randomCardGenerator()
@@ -25,6 +28,9 @@
 #               static public getIcon(Card card)
 #               static public Icon getBackCardIcon()
 * 
+--------------------------------------------------------------*/
+
+/*---------------------------Person-3--------------------------
 * Card import
 # @todo         //import Card from Assig3
 #               --adjust for joker--
@@ -42,8 +48,10 @@
 #               boolean addCard(Card card)
 #               boolean removeCard(Card card)
 #               void sort()
-#               int getNumCards()        
+#               int getNumCards()    
+-----------------------------------------------------------------*/    
 
+/*-------------------Person-1---&&---Person-4----------------------
 #Phase3 (9+)
 
 # @todo          create action listeners
@@ -54,3 +62,4 @@
 #                    intentionally lose? always win?
 #                decide how to update cards or the computer's cards to #                reflect one fewer card every round so that 
 #                hands get smaller
+------------------------------------------------------------------*/
