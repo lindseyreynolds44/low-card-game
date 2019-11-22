@@ -17,6 +17,8 @@ public class phase1
    // if we want to display all at once using labels, we need to.
    
    static final int NUM_CARD_IMAGES = 57; // 52 + 4 jokers + 1 back-of-card image
+   static final int NUM_VALUES = 14;
+   static final int NUM_SUITS = 4;
    static Icon[] icon = new ImageIcon[NUM_CARD_IMAGES];
       
    static void loadCardIcons()
@@ -24,18 +26,79 @@ public class phase1
       // build the file names ("AC.gif", "2C.gif", "3C.gif", "TC.gif", etc.)
       // in a SHORT loop.  For each file name, read it in and use it to
       // instantiate each of the 57 Icons in the icon[] array.
+      String imageName = "";
+      String fileString = "";
+      int arrayIndex = 0;
+
+
+      // loop through number of values, 0 - 13, which will be converted to card values
+      for(int valueIndex = 0; valueIndex < NUM_VALUES; valueIndex++)
+      {
+         // loop through number of suits, 0 - 3, which will be converted to card suits
+         for(int suitIndex = 0; suitIndex < NUM_SUITS; suitIndex++, arrayIndex++){
+            imageName = turnIntIntoCardValue(valueIndex) + turnIntIntoCardSuit(suitIndex);               
+            fileString = "images/" + imageName + ".gif";
+            icon[arrayIndex] = new ImageIcon(fileString);
+         }
+      }
+      // add in the blank card icon
+      icon[NUM_CARD_IMAGES - 1] = new ImageIcon("images/BK.gif");
    }
    
    // turns 0 - 13 into "A", "2", "3", ... "Q", "K", "X"
    static String turnIntIntoCardValue(int k)
    {
-      // an idea for a helper method (do it differently if you wish)
+      switch(k)
+      {
+         case 0:
+            return "A";
+         case 1:
+            return "2";
+         case 2:
+            return "3";
+         case 3:
+            return "4";
+         case 4:
+            return "5";
+         case 5:
+            return "6";
+         case 6:
+            return "7";
+         case 7:
+            return "8";
+         case 8:
+            return "9";
+         case 9:
+            return "T";
+         case 10:
+            return "J";
+         case 11:
+            return "Q";
+         case 12:
+            return "K";
+         case 13:
+            return "X";
+         default:
+            return "";
+      } 
    }
    
    // turns 0 - 3 into "C", "D", "H", "S"
    static String turnIntIntoCardSuit(int j)
    {
-      // an idea for another helper method (do it differently if you wish)
+      switch(j)
+      {
+         case 0:
+            return "C";
+         case 1:
+            return "D";
+         case 2:
+            return "H";
+         case 3:
+            return "S";
+         default:
+            return "";
+      }
    }
    
    // a simple main to throw all the JLabels out there for the world to see
@@ -67,5 +130,6 @@ public class phase1
 
       // show everything to the user
       frmMyWindow.setVisible(true);
+   
    }
 }
