@@ -17,8 +17,10 @@ public class phase1
    // if we want to display all at once using labels, we need to.
    
    static final int NUM_CARD_IMAGES = 57; // 52 + 4 jokers + 1 back-of-card image
-   static final int NUM_VALUES = 14;
    static final int NUM_SUITS = 4;
+   static String[] values = 
+      {"A", "2", "3", "4", "5", "6", "7", "8", "9", "T", "J", "Q", "K", "X"};
+   static String[] suits = {"C", "D", "H", "S"};
    static Icon[] icon = new ImageIcon[NUM_CARD_IMAGES];
       
    static void loadCardIcons()
@@ -32,7 +34,7 @@ public class phase1
 
 
       // loop through number of values, 0 - 13, which will be converted to card values
-      for(int valueIndex = 0; valueIndex < NUM_VALUES; valueIndex++)
+      for(int valueIndex = 0; valueIndex < values.length; valueIndex++)
       {
          // loop through number of suits, 0 - 3, which will be converted to card suits
          for(int suitIndex = 0; suitIndex < NUM_SUITS; suitIndex++, arrayIndex++){
@@ -48,57 +50,23 @@ public class phase1
    // turns 0 - 13 into "A", "2", "3", ... "Q", "K", "X"
    static String turnIntIntoCardValue(int k)
    {
-      switch(k)
+      for(int i = 0; i < values.length; i++)
       {
-         case 0:
-            return "A";
-         case 1:
-            return "2";
-         case 2:
-            return "3";
-         case 3:
-            return "4";
-         case 4:
-            return "5";
-         case 5:
-            return "6";
-         case 6:
-            return "7";
-         case 7:
-            return "8";
-         case 8:
-            return "9";
-         case 9:
-            return "T";
-         case 10:
-            return "J";
-         case 11:
-            return "Q";
-         case 12:
-            return "K";
-         case 13:
-            return "X";
-         default:
-            return "";
-      } 
+         if(k == i)
+            return values[i];
+      }
+      return "";
    }
    
    // turns 0 - 3 into "C", "D", "H", "S"
    static String turnIntIntoCardSuit(int j)
    {
-      switch(j)
+      for(int i = 0; i < suits.length; i++)
       {
-         case 0:
-            return "C";
-         case 1:
-            return "D";
-         case 2:
-            return "H";
-         case 3:
-            return "S";
-         default:
-            return "";
+         if(j == i)
+            return suits[i];
       }
+      return "";
    }
    
    // a simple main to throw all the JLabels out there for the world to see
@@ -130,6 +98,6 @@ public class phase1
 
       // show everything to the user
       frmMyWindow.setVisible(true);
-   
+      
    }
 }
