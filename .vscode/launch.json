@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - phase3",
+            "request": "launch",
+            "mainClass": "phase3"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - phase1",
             "request": "launch",
             "mainClass": "phase1",

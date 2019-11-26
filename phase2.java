@@ -1,6 +1,10 @@
 import java.awt.*;
 import javax.swing.*;
 import javax.swing.border.*;
+import javax.lang.model.util.ElementScanner6;
+import java.util.Random;
+import javax.swing.border.TitledBorder;
+import java.awt.event.*;
 
 /*********************************************************************
  * Phase 2
@@ -29,7 +33,6 @@ import javax.swing.border.*;
      
      public static void main(String[] args)
      {
-        int k;
         Icon tempIcon;
   
         //Icons loaded from GUICard 

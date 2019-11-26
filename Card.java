@@ -1,3 +1,11 @@
+import java.awt.*;
+import javax.lang.model.util.ElementScanner6;
+import javax.swing.*;
+import javax.swing.border.*;
+import java.util.Random;
+import javax.swing.border.TitledBorder;
+import java.awt.event.*;
+
 /****************************************************************
  * Card
  * imported Card class 
